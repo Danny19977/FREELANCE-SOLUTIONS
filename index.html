@@ -13,7 +13,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>FS</title>
+  <title>FreelanceSolutions(FS)</title>
 
 
   <!-- bootstrap core css -->
@@ -216,9 +216,12 @@
   <section class="service_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
-        <h2>
+        <h1>
           Our Services
-        </h2>
+        </h1>
+        <h4>
+          How we can help you succeed
+        </h4>
       </div>
     </div>
     <div class="container ">
@@ -226,16 +229,17 @@
         <div class="col-md-6 col-lg-4">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s1.png" alt="">
+              <img src="images/s1.svg" alt="">
             </div>
             <div class="detail-box">
               <h4>
-                Web Development
+                Website Creation
               </h4>
               <p>
-                Building your digital future with innovative web solutions.
+                Your Online Presence Starts Here. Let us help you create a stunning website that stands out from the
+                rest.
               </p>
-              <a href="">
+              <a href="service-details.html?service=Website%20Creation" class="btn-1" onclick="navigateToService('Website Creation')">
                 Read More
                 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 
@@ -246,16 +250,17 @@
         <div class="col-md-6 col-lg-4">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s2.png" alt="">
+              <img src="images/s2.svg" alt="">
             </div>
             <div class="detail-box">
               <h4>
                 Web Redesign
               </h4>
               <p>
-                Transforming your online presence with fresh, modern web redesigns
+                Is Your Website Working for You? Let us help you redesign your website for maximum impact and
+                performance.
               </p>
-              <a href="">
+              <a href="service-details.html?service=Web%20Redesign" class="btn-1" onclick="navigateToService('Web Redesign')">
                 Read More
                 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 
@@ -266,65 +271,41 @@
         <div class="col-md-6 col-lg-4 ">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s3.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h4>
-                Google Listing
-              </h4>
-              <p>
-                "Boost your visibility with a verified Google listing—let customers find you easily!"
-
-
-              </p>
-              <a href="">
-                Read More
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="box ">
-            <div class="img-box">
-              <img src="images/s4.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h4>
-                Google Maps Listing
-              </h4>
-              <p>
-                "Get found faster with a Google Maps listing—your business, right on the map!"
-
-
-              </p>
-              <a href="">
-                Read More
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="box ">
-            <div class="img-box">
-              <img src="images/s5.png" alt="">
+              <img src="images/s3.svg" alt="">
             </div>
             <div class="detail-box">
               <h4>
                 Graphic Design
               </h4>
               <p>
-                "Turning ideas into eye-catching visuals with creative graphic design."
-
-
+                Make Your Brand Unforgettable: Professional Graphic Design. Let us help you create stunning visuals
+                that captivate your audience.
               </p>
-              <a href="">
+              <a href="service-details.html?service=Graphic%20Design" class="btn-1" onclick="navigateToService('Graphic Design')">
                 Read More
                 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s4.svg" alt="">
+            </div>
+            <div class="detail-box">
+              <h4>
+                Systems and Task Automation
+              </h4>
+              <p>
+                Time is Money: Let Us Automate Your Workflow. We can help you streamline your operations and save time
+                and
+                money.
+              </p>
+              <a href="service-details.html?service=Systems%20and%20Task%20Automation" class="btn-1" onclick="navigateToService('Systems and Task Automation')">
+                Read More
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
               </a>
             </div>
           </div>
@@ -336,20 +317,40 @@
             </div>
             <div class="detail-box">
               <h4>
-                <!-- Domain Name -->
+                Online Presence
               </h4>
               <p>
-                We develop
+                Ready to Take Your Brand to the Next Level Online? Let us help you create a powerful online presence.
               </p>
-              <a href="service.html">
-                <!-- Read More -->
+              <a href="service-details.html?service=Online%20Presence" class="btn-1" onclick="navigateToService('Online Presence')">
+                Read More
                 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
 
               </a>
             </div>
           </div>
         </div>
+        <!-- <div class="col-md-6 col-lg-4">
+          <div class="box ">
+            <div class="img-box">
+              <img src="images/s6.png" alt="">
+            </div> -->
+        <!-- <div class="detail-box"> -->
+        <!-- <h4> -->
+        <!-- Domain Name -->
+        <!-- </h4> -->
+        <!-- <p> -->
+        <!-- We develop -->
+        <!-- </p> -->
+        <!-- <a href="service.html"> -->
+        <!-- Read More -->
+        <!-- <i class="fa fa-long-arrow-right" aria-hidden="true"></i> -->
+
+        <!-- </a>
+            </div> -->
       </div>
+    </div>
+    </div>
     </div>
   </section>
 
@@ -839,7 +840,11 @@
   <script src="js/bootstrap.js"></script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
-
+  <script>
+    function navigateToService(serviceName) {
+      window.location.href = `service-details.html?service=${encodeURIComponent(serviceName)}`;
+    }
+  </script>
 
 </body>
 
