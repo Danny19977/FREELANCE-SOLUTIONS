@@ -13,7 +13,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
-  <title>FS</title>
+  <title>Portfolio - FS</title>
 
 
   <!-- bootstrap core css -->
@@ -56,7 +56,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="about.html"> About</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="service.html">Services</a>
               </li>
               <li class="nav-item">
@@ -89,144 +89,112 @@
   <!-- end header section -->
   </div>
 
-  <!-- service section -->
-
-  <section class="service_section layout_padding">
+  <!-- portfolio section -->
+  <section class="portfolio_section layout_padding">
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
-          Our Services
+          Our Portfolio
         </h2>
+        <p>
+          Explore the websites we've developed and designs we've created for our clients.
+        </p>
       </div>
-    </div>
-    <div class="container ">
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <div class="box ">
+      <div class="filter_container text-center mb-4">
+        <button class="btn btn-primary filter-btn" data-filter="all">All</button>
+        <button class="btn btn-secondary filter-btn" data-filter="websites">Websites</button>
+        <button class="btn btn-secondary filter-btn" data-filter="graphics">Graphic Designs</button>
+      </div>
+      <div class="row portfolio_items">
+        <div class="col-md-6 col-lg-4 portfolio_item" data-category="websites">
+          <div class="portfolio_box">
             <div class="img-box">
-              <img src="images/s1.png" alt="">
+              <img src="images/portfolio1.png" alt="Website 1">
             </div>
             <div class="detail-box">
-              <h4>
-                Shared Hosting
-              </h4>
-              <p>
-                Generators on the Internet tend to repeat predefined chunks as necessary
-              </p>
-              <a href="">
-                Read More
+              <h4>Website Development</h4>
+              <p>Custom e-commerce platform for a retail client.</p>
+              <a href="portfolio-details.html">
+                View Details
                 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-
               </a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="box ">
+        <div class="col-md-6 col-lg-4 portfolio_item" data-category="graphics">
+          <div class="portfolio_box">
             <div class="img-box">
-              <img src="images/s2.png" alt="">
+              <img src="images/portfolio2.png" alt="Graphic Design 1">
             </div>
             <div class="detail-box">
-              <h4>
-                Dedicated Hosting
-              </h4>
-              <p>
-                Generators on the Internet tend to repeat predefined chunks as necessary
-              </p>
-              <a href="">
-                Read More
+              <h4>Graphic Design</h4>
+              <p>Brand identity and logo design for a startup.</p>
+              <a href="portfolio-details.html">
+                View Details
                 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-
               </a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 ">
-          <div class="box ">
+        <div class="col-md-6 col-lg-4 portfolio_item" data-category="websites">
+          <div class="portfolio_box">
             <div class="img-box">
-              <img src="images/s3.png" alt="">
+              <img src="images/portfolio3.png" alt="Website 2">
             </div>
             <div class="detail-box">
-              <h4>
-                Cloud Hosting
-              </h4>
-              <p>
-                Generators on the Internet tend to repeat predefined chunks as necessary
-              </p>
-              <a href="">
-                Read More
+              <h4>Website Redesign</h4>
+              <p>Modernized website for a corporate client.</p>
+              <a href="portfolio-details.html">
+                View Details
                 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-
               </a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="box ">
+        <div class="col-md-6 col-lg-4 portfolio_item" data-category="graphics">
+          <div class="portfolio_box">
             <div class="img-box">
-              <img src="images/s4.png" alt="">
+              <img src="images/portfolio4.png" alt="Graphic Design 2">
             </div>
             <div class="detail-box">
-              <h4>
-                VPS Hosting
-              </h4>
-              <p>
-                Generators on the Internet tend to repeat predefined chunks as necessary
-              </p>
-              <a href="">
-                Read More
+              <h4>Graphic Design</h4>
+              <p>Marketing materials for a product launch.</p>
+              <a href="portfolio-details.html">
+                View Details
                 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-
               </a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="box ">
-            <div class="img-box">
-              <img src="images/s5.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h4>
-                Wordpress Hosting
-              </h4>
-              <p>
-                Generators on the Internet tend to repeat predefined chunks as necessary
-              </p>
-              <a href="">
-                Read More
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="box ">
-            <div class="img-box">
-              <img src="images/s6.png" alt="">
-            </div>
-            <div class="detail-box">
-              <h4>
-                Domain Name
-              </h4>
-              <p>
-                Generators on the Internet tend to repeat predefined chunks as necessary
-              </p>
-              <a href="">
-                Read More
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-
-              </a>
-            </div>
-          </div>
-        </div>
+        <!-- Add more portfolio items as needed -->
       </div>
     </div>
   </section>
+  <!-- end portfolio section -->
 
-  <!-- end service section -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const portfolioItems = document.querySelectorAll(".portfolio_item");
 
+      filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          const filter = button.getAttribute("data-filter");
+
+          filterButtons.forEach(btn => btn.classList.remove("btn-primary"));
+          button.classList.add("btn-primary");
+
+          portfolioItems.forEach(item => {
+            if (filter === "all" || item.getAttribute("data-category") === filter) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+    });
+  </script>
 
   <!-- info section -->
 
