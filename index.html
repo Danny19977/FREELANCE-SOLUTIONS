@@ -29,7 +29,35 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
 
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    .navbar {
+      transition: background-color 0.3s;
+    }
+
+    .navbar.dark-mode {
+      background-color: #1e1e1e;
+    }
+
+    .dark-mode-toggle {
+      cursor: pointer;
+      font-size: 1.5rem;
+      color: #ffffff;
+    }
+
+    .dark-mode .dark-mode-toggle {
+      color: #f1c40f;
+    }
+  </style>
 </head>
 
 <body>
@@ -71,9 +99,11 @@
             </ul>
             <div class="quote_btn-container">
               <form class="form-inline">
-                <button class="btn   nav_search-btn" type="submit">
+                <!-- <button class="btn   nav_search-btn" type="submit">
                   <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
+                  <span class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</span>
+                </button> -->
+                 <span class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</span>
               </form>
               <a href="tel:+27633377293">
                 <i class="fa fa-phone" aria-hidden="true"></i>
@@ -85,6 +115,7 @@
           </div>
         </nav>
       </div>
+      
     </header>
     <!-- end header section -->
     <!-- slider section -->
@@ -812,7 +843,7 @@
                   South Africa, Gauteng
                 </span>
               </a>
-              <a href="tel:+27633377293">
+              <a href="https://wa.me/+27633377293" target="_blank">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
                   Call +27 633 377 293
@@ -892,6 +923,7 @@
             Subscribe
           </h4>
           <form action="#">
+
             <input type="text" placeholder="Enter email" />
             <button type="submit">
               Subscribe
@@ -927,6 +959,11 @@
   <script>
     function navigateToService(serviceName) {
       window.location.href = `service-details.html?service=${encodeURIComponent(serviceName)}`;
+    }
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      document.querySelector('.navbar').classList.toggle('dark-mode');
     }
   </script>
 

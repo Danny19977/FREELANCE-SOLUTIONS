@@ -29,7 +29,36 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
 
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    .navbar {
+      transition: background-color 0.3s;
+    }
+
+    .navbar.dark-mode {
+      background-color: #1e1e1e;
+    }
+
+    .dark-mode-toggle {
+      cursor: pointer;
+      font-size: 1.5rem;
+      color: #ffffff;
+    }
+
+    .dark-mode .dark-mode-toggle {
+      color: #f1c40f;
+    }
+  </style>
 </head>
 
 <body class="sub_page">
@@ -38,7 +67,7 @@
     <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
             <span>FREELANCE SOLUTIONS</span>
           </a>
@@ -81,6 +110,7 @@
                 Call : +27 63 337 7293
               </span>
             </a>
+            <span class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</span>
           </div>
       </div>
       </nav>
@@ -104,19 +134,22 @@
         <div class="col-md-6 col-lg-4">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s1.png" alt="">
+              <img src="images/service_icon (1).png" alt="">
             </div>
             <div class="detail-box">
               <h4>
-                Shared Hosting
+                Website Development
               </h4>
               <p>
-                Generators on the Internet tend to repeat predefined chunks as necessary
+                Freelance Solutions offers top-notch website development services tailored to meet your unique needs.
+                Our team of experts ensures that your website is not only visually appealing but also highly functional
+                and optimized for performance. By choosing Freelance Solutions, you gain access to innovative designs,
+                cutting-edge technologies, and a commitment to delivering exceptional results that help your business
+                thrive in the digital world.
               </p>
-              <a href="">
-                Read More
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-
+              <a href="https://wa.me/+27633377293" target="_blank">
+                Contact Us
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
               </a>
             </div>
           </div>
@@ -124,19 +157,23 @@
         <div class="col-md-6 col-lg-4">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s2.png" alt="">
+              <img src="images/service_icon (2).png" alt="">
             </div>
             <div class="detail-box">
               <h4>
-                Dedicated Hosting
+                Website Redesign
               </h4>
               <p>
-                Generators on the Internet tend to repeat predefined chunks as necessary
+                Freelance Solutions specializes in website redesign services that breathe new life into your online
+                presence. Our team of skilled designers and developers work closely with you to understand your vision
+                and goals, ensuring that the redesigned website not only looks stunning but also enhances user
+                experience
+                and functionality. With our expertise, we transform outdated websites into modern, responsive, and
+                visually appealing platforms that captivate your audience and drive results.
               </p>
-              <a href="">
-                Read More
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-
+              <a href="https://wa.me/+27633377293" target="_blank">
+                Contact Us
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
               </a>
             </div>
           </div>
@@ -144,24 +181,30 @@
         <div class="col-md-6 col-lg-4 ">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s3.png" alt="">
+              <img src="images/service_icon (3).png" alt="">
             </div>
             <div class="detail-box">
               <h4>
-                Cloud Hosting
+                Graphic Design
               </h4>
               <p>
-                Generators on the Internet tend to repeat predefined chunks as necessary
+                Freelance Solutions offers exceptional graphic design services that elevate your brand's visual
+                identity.
+                Our talented designers create stunning graphics, logos, and marketing materials tailored to your
+                specific
+                needs. With a focus on creativity and innovation, we ensure that your designs not only capture attention
+                but also effectively communicate your message. Trust Freelance Solutions to bring your ideas to life
+                with
+                captivating visuals that leave a lasting impression.
               </p>
-              <a href="">
-                Read More
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-
+              <a href="https://wa.me/+27633377293" target="_blank">
+                Contact Us
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
               </a>
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4">
+        <!-- <div class="col-md-6 col-lg-4">
           <div class="box ">
             <div class="img-box">
               <img src="images/s4.png" alt="">
@@ -220,7 +263,7 @@
               </a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -245,7 +288,7 @@
                   South Africa Johannesburg
                 </span>
               </a>
-              <a href="">
+              <a href="https://wa.me/+27633377293" target="_blank">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
                   Call +27 633 377 293
@@ -264,7 +307,7 @@
               <i class="fa fa-facebook" aria-hidden="true"></i>
             </a>
             <a href="https://www.tiktok.com/@freelance.solutio?_t=ZM-8vlpqE3eJrq&_r=1">
-                <img src="images/tiktok.png" alt="Twitter Icon" style="width: 24px; height: 24px;">
+              <img src="images/tiktok.png" alt="Twitter Icon" style="width: 24px; height: 24px;">
             </a>
             <!-- <a href="">
               <i class="fa fa-linkedin" aria-hidden="true"></i>
@@ -325,6 +368,7 @@
             Subscribe
           </h4>
           <form action="#">
+
             <input type="text" placeholder="Enter email" />
             <button type="submit">
               Subscribe
@@ -355,7 +399,12 @@
   <script src="js/bootstrap.js"></script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
-
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      document.querySelector('.navbar').classList.toggle('dark-mode');
+    }
+  </script>
 
 </body>
 
